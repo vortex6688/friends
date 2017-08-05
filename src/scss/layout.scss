@@ -1,0 +1,52 @@
+/* Layout Style Rules */
+
+.l-centered {
+  text-align: center;
+}
+
+.l-right-aligned {
+  text-align: right;
+}
+
+.l-left-aligned {
+  text-align: left;
+}
+
+// no padding layout
+.l-no-pad {
+  padding: 0;
+}
+
+// Update Foundation .row class ( default 75rem )
+.row {
+  max-width: 100%;
+}
+
+// Update Foundation .column class, otherwise it's behavior inside .row is not as expected
+.column {
+  box-sizing: border-box;
+}
+
+// fixed width layouts
+.l-fixed {
+  width: 1024px;
+  margin: 0 auto;
+
+  @include breakpoint(medium down) {
+    max-width: 640px;
+  }
+
+    @include breakpoint(small down) {
+    max-width: 100%;
+  }
+}
+
+.l-fixed-narrow {
+  width: 640px;
+  margin: 0 auto;
+}
+
+// removed line-height (needed in some cases when images is a link, so it add some margin after)
+.l-no-line-height {
+  line-height: 0;
+}

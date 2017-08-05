@@ -1,0 +1,26 @@
+/* Navigation Module Style Rules*/
+nav { 
+  background: rgba(0,0,0,.2);
+  border-radius: 0 0 1em 1em;
+
+  @include breakpoint(small down) {
+    border-radius: 0;
+  }
+
+  a {
+    padding: 0.4em 0;
+    color: #000;
+    font-family: "robotoSlabbold";
+
+    @include breakpoint(large up) {
+      font-size: 1.2em;
+    }
+
+    @include breakpoint(small down) {
+      width: 50%;
+      text-align: center;
+      white-space: nowrap;
+      padding: 0.2em 0;
+    }
+  }
+}

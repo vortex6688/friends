@@ -1,0 +1,106 @@
+/* Base Style Rules */
+
+/* Default Settings */
+
+html {
+  font-size: 62.5%;
+  background-image: url('../images/background.jpg');
+  background-attachment: fixed;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 360px;
+  font-size: 1.8rem;
+  color: #111;
+  background-color: rgba(255,255,255,0.9);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* Importing Fonts */
+
+@font-face {
+    font-family: 'robotoSlab';
+    src: url('../fonts/robotoslab-regular-webfont.woff2') format('woff2'),
+         url('../fonts/robotoslab-regular-webfont.woff') format('woff'),
+         url('../fonts/RobotoSlab-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoSlabbold';
+    src: url('../fonts/robotoslab-bold-webfont.woff2') format('woff2'),
+         url('../fonts/robotoslab-bold-webfont.woff') format('woff'),
+        url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ptSerif';
+    src: url('../fonts/pt_serif-web-regular-webfont.woff2') format('woff2'),
+         url('../fonts/pt_serif-web-regular-webfont.woff') format('woff'),
+         url('../fonts/PT_Serif-Web-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5 { 
+  line-height: 1.4em;
+  font-family: 'ptSerif';
+  padding: 0.25em;
+  margin: 0.25em;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 3.6rem;
+}
+  
+h4 {
+  font-size: 2.4rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+}
+
+p {
+  line-height: 1.4em;
+  font-family: 'ptSerif', serif;
+  margin: 0.2em 0.5em;
+}
+
+a {
+  text-decoration: none;
+  color: #c21717;
+
+  &:hover {
+    color: #1704e1;
+  }
+}
+
+section { 
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  box-sizing: border-box;
+
+  @include breakpoint(small down) {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}

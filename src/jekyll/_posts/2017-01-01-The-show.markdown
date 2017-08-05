@@ -1,0 +1,75 @@
+---
+body_class: post
+layout: post
+title: The Show
+---
+
+<section class="l-centered" itemscope itemtype="http://schema.org/TVSeries">
+	<h4 itemprop="name"><a name="show"></a>Friends!</h4>
+	<p itemprop= "description">10 Seasons of FUN! The show is about 6 friends living in New York City. We start meeting them in the "Central Perk" cafe. It's a huge 10 years story with a tiny one in each episode.
+    </p>
+    <h5>Let's talk a little about the main characters:</h5>
+</section>
+
+<section>
+	<h4>Phoebe Buffay:</h4>
+	<p>
+		- Phoebe is really special woman, crazy and king at the same time, vegetarian, playing the guitar (well, it's usually lots of fun when she's playing). 
+	</p>
+
+	<h4>Chandler Bing:</h4>
+	<p>
+		- Bing! Well that's the funny one. Sarcasm is the Chandler's way to greet any news or any statement. It's always a couple of jokes in his pocket, even if he doesn't want to make any jokes, it's gonna come out however :).
+	</p>
+
+	<h4>Monica Geller:</h4>
+	<p>
+		- Well Monica is a host, all the friends hang out in her apartment a lot. She hates mess and even a small drop of water on a table drives her crazy :))
+	</p>
+
+	<h4>Joey Tribbiani:</h4>
+	<p>
+		Italian guy, Chandler's roommate. He is an actor, he loves eating and dating a lot. "How are you doing?" - his famous phrase he uses to get a date :).
+	</p>
+
+	<h4>Rachel Green:</h4>
+	<p>
+		Oh Rachel is the star of the first episode, she showed up just in time to make life of the Friends much funnier and not just funnier...
+	</p>
+
+	<h4>Ross Geller:</h4> 
+	<p>
+		Ross is Monica's older brother. He's paleontologist, but they call him dinosaur guy and make fun of his "dinosaurs stories".
+	</p>
+</section>
+
+<section>
+	<h5>Description from <a href='http://www.fandango.com/friends[tvseries]_v258653/plotsummary' target="_blank" >fandango.com</a>:</h5>
+
+	<p class="indent">
+		Few ensemble sitcoms of the 1990s and early 2000s commanded as much love and devotion from their fans as the immensely popular NBC series Friends -- and few such sitcoms generated as many "water-cooler conversations" as the characters' lives and loves evolved over the series' ten-year run. Set in New York City, the action largely took place in two neighboring loft apartments. One of these was the home of Monica Geller (Courteney Cox), who can be described as the series' "rock" -- or better yet, "den mother." An assistant chef who later ran her own restaurant, Monica lived with her best friend, Rachel Green (Jennifer Aniston), who had come to New York after running out on her wedding; employed as a waitress in the earlier episodes, Rachel later became a buyer for a retail fashion chain, and finally an assistant to a high-profile designer. Occasionally dropping into Monica's apartment was her brother, Ross (David Schwimmer), a paleontologist who spent most of the first season coming to grips with the fact that his wife, Carol (Jane Sibbett), had declared herself a lesbian and divorced him (Carol would later give birth to Ross' son Ben, whom she and her partner insisted upon raising themselves). Across the hall from Monica's flat lived Joey Tribbiani (Matt LeBlanc), an aspiring actor whose professional luck was generally bad until he landed a continuing role on the daytime drama Days of Our Lives -- as a man with a woman's brain! Joey lived with "corporate guy" Chandler Bing (Matthew Perry), who was regarded as the class clown of the bunch. A frequent guest at both apartments was Phoebe Buffay (Lisa Kudrow), an airheaded will-o'-the-wisp who never quite got it all together at any one time.
+    </p>
+
+    <p class="indent">
+		When the "friends" weren't at home or at work, they could be found hanging out at Central Perk, a Greenwich Village coffeehouse manned by Gunther (played by real-life "coffee guy" James Michael Tyler, who did not receive screen credit until well into the series' run), where Phoebe occasionally performed as a folksinger. Gradually and inevitably, many of the friends became lovers. First it was Ross and Rachel, a relationship that came to a screeching halt in season three when Ross slept with another woman when the couple was "on a break." Ross then ended up marrying the prickly Emily Waltham (Helen Baxendale) during a jaunt to England in season four. That this alliance was doomed from the start was demonstrated when, during the ceremony, Ross said Rachel's name instead of Emily's. After the dissolution of the marriage, a drunken Ross and Rachel impulsively got hitched in Las Vegas at the end of season five, but they soon realized that they'd acted too hastily, and were themselves divorced. In season eight, Rachel gave birth to Ross' baby, a girl named Emma. Meanwhile, Chandler and Monica, who after "getting it on" at Ross' wedding ceremony tried to keep their relationship a secret from everyone, were married at the close of season seven. They would later discover that they could not have children, whereupon they adopted a baby from a woman named Erica (Anna Faris). In a similar vein, the whimsical Phoebe had earlier agreed to be artificially inseminated so that she could bear a child for her half-brother, Frank (Giovanni Ribisi), and his wife (and former teacher), Alice (Debra Jo Rupp). Ultimately, Phoebe gave birth to triplets. Phoebe also had another sibling, a twin sister named Ursula -- actually the same character played by Lisa Kudrow in the earlier NBC sitcom Mad About You, which was still in production when Friends debuted on September 22, 1994.
+	</p> 
+
+    <p class="indent">
+        The series' tenth and final season (2003-2004) wrapped up several loose plot strands. Having admitted that he always loved Rachel, Joey proposed to her, but the marriage never came off -- and in an eleventh-hour decision, Rachel forsook plans to move to Paris, and returned to Ross. After several desultory relationships, Phoebe married a nice guy named Mike (Paul Rudd). And as Friends approached its two-part finale, Erica, the birth mother of Monica and Chandler's soon-to-be-adopted baby went into labor -- and surprisingly delivered twins, which they named Erica and Jack. After the storyline of the series ended, Joey would end up moving out of New York, heading to L.A. to pursue a film career, thereby setting up the premise of Matt LeBlanc's spin-off sitcom Joey. At or near the number one ratings slot throughout most of its run, Friends also earned a veritable warehouse of Emmy Awards -- not to mention full-fledged stardom for all of the series' regulars.
+    </p>
+</section>
+
+<section>
+<h5><a href='http://en.wikipedia.org/wiki/Friends' target="_blank" >Wiki</a> description:</h5>
+    <p class="indent">
+		Friends is an American sitcom created by David Crane and Marta Kauffman, which aired on NBC from September 22, 1994 to May 6, 2004. The series revolves around a group of friends in Manhattan. The series was produced by Bright/Kauffman/Crane Productions, in association with Warner Bros. Television. The original executive producers were Crane, Kauffman and Kevin Bright, with numerous others being promoted in later seasons.
+	</p>
+
+    <p class="indent">
+		Kauffman and Crane began developing Friends under the title Insomnia Cafe in November/December 1993. They presented the idea to Bright, with whom they had previously worked, and together they pitched a seven-page treatment of the series to NBC. After several script rewrites and changes, including a second title change to Friends Like Us, the series was finally named Friends and premiered on NBC's coveted Thursday 8:30 pm timeslot. Filming for the series took place at Warner Bros. Studios in Burbank, California in front of a live studio audience. After ten seasons on the network, the series finale was promoted by NBC, and viewing parties were organized around the U.S. The series finale (the 236th episode), airing on May 6, 2004, was watched by 51.1 million American viewers, making it the fourth most watched series finale in television history and the most watched episode of the decade.
+    </p>
+
+    <p class="indent">
+		Friends received positive reviews throughout its run, becoming one of the most popular sitcoms of all time. The series won many awards and was nominated for 63 Primetime Emmy Awards. The series, an instant hit from its debut, was also very successful in the ratings, consistently ranking in the top ten in the final primetime ratings. Many critics now regard it as one of the finest shows in television history, including TV Guide, which ranked it No. 21 on their list of the 50 greatest TV shows of all time. In 1997, the episode "The One with the Prom Video" was ranked No. 100 on TV Guide's 100 Greatest Episodes of All-Time. The series made a large cultural impact, which continues today. The Central Perk coffee house that was featured prominently in the series has inspired various imitations throughout the world. The series continues in syndication worldwide. All 10 seasons are available on DVD. The spin-off series Joey was created to follow up with the series after the finale.
+	</p>
+</section>

@@ -1,0 +1,17 @@
+/* Utility Style Rules */
+
+
+// .indent is applied on a paragraph when needed
+.indent {
+  text-indent: 1em;
+  margin: 0.5em;
+}
+
+// .indent-parent is applied on a parant element that will affect all the child paragraphs
+.indent-parent {
+	
+  p {
+	text-indent: 1em;
+    margin: 0.5em;
+  }
+}

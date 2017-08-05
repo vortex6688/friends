@@ -1,0 +1,37 @@
+---
+layout: post
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+
+    <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
+    <link rel="canonical" href="http://example.com/">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="http://example.com/feed.xml">
+</head>
+
+<body class="{{page.body_class}} l-fixed">
+
+    {% include header.html %}
+
+	<div class="page">
+        <section class="l-centered">
+            <h4>{{ page.title }}</h4>
+        </section>
+	   {{ content }}
+	</div>
+
+    {% include footer.html %}
+
+	<script src="/js/main.js"></script>
+
+</body>
+</html>

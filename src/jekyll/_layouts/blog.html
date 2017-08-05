@@ -1,0 +1,113 @@
+---
+layout: blog
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+
+    <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
+    <link rel="canonical" href="http://example.com/">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="http://example.com/feed.xml">
+</head>
+
+<body class="{{page.body_class}} l-fixed">
+
+{% include header.html %}
+
+<!-- TO DO Modify Blog Content -->
+
+
+<div class="page">
+
+	<section class="l-centered l-no-pad">
+		<h3>{{page.title}}</h3> 
+    </section>
+
+    <section class="l-centered">
+		    	<!-- Pagination links bottom -->
+		<div class="pagination row align-center align-middle">
+		    {% if paginator.previous_page %}
+		        <a href="{{site.baseurl}}{{ paginator.previous_page_path }}" class="previous">&laquo;</a>
+		    {% else %}
+		        <span class="previous">&laquo;</span>
+		    {% endif %}
+
+		  	{% if paginator.previous_page %}
+		  		<a class="bubble_single_item" href="{{site.baseurl}}{{ paginator.previous_page_path }}">
+		  			{{ paginator.previous_page }}
+		  		</a>
+		  	{% endif %}
+
+		  	<div class="bubble_single_item">
+		  		{{ paginator.page }}
+		    </div>
+
+		  	{% if paginator.next_page %}
+		  		<a class="bubble_single_item" href="{{site.baseurl}}{{ paginator.next_page_path }}">
+		  			{{ paginator.next_page }}
+		  		</a>
+		  	{% endif %}
+
+		    {% if paginator.next_page %}
+		        <a href="{{site.baseurl}}{{ paginator.next_page_path }}" class="next">&raquo;</a>
+		    {% else %}
+		        <span class="next ">&raquo;</span>
+		    {% endif %}
+		</div>
+	</section>
+
+    {% for post in paginator.posts %}
+	    <section class="l-centered l-no-pad">
+	      <h4><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></h4>
+	    </section>
+	    {{ post.content | truncatewords: 100 }}
+	    <h5><a href="{{site.baseurl}}{{ post.url }}">keep reading...</a></h5>
+	{% endfor %}
+</div>
+
+<section class="l-centered">
+	    	<!-- Pagination links bottom -->
+	<div class="pagination row align-center align-middle">
+		{% if paginator.previous_page %}
+			<a href="{{site.baseurl}}{{ paginator.previous_page_path }}" class="previous">&laquo;</a>
+		{% else %}
+			<span class="previous">&laquo;</span>
+		{% endif %}
+
+		{% if paginator.previous_page %}
+			<a class="bubble_single_item" href="{{site.baseurl}}{{ paginator.previous_page_path }}">
+				{{ paginator.previous_page }}
+			</a>
+		{% endif %}
+
+	  	<div class="bubble_single_item">
+	  		{{ paginator.page }}
+	    </div>
+
+	  	{% if paginator.next_page %}
+	  		<a class="bubble_single_item" href="{{site.baseurl}}{{ paginator.next_page_path }}">
+	  			{{ paginator.next_page }}
+	  		</a>
+	  	{% endif %}
+
+	    {% if paginator.next_page %}
+	        <a href="{{site.baseurl}}{{ paginator.next_page_path }}" class="next">&raquo;</a>
+	    {% else %}
+	        <span class="next">&raquo;</span>
+	    {% endif %}
+	</div>
+</section>
+
+
+{% include footer.html %}
+
+</body>
+</html>

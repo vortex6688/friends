@@ -1,0 +1,53 @@
+/* Main Style Rules Document */
+
+@import 'settings';
+@import 'node_modules/foundation-sites/scss/foundation';
+@import '../vendor/css/lightbox.css';
+
+@include foundation-flex-grid;
+@include foundation-flex-classes;
+@include foundation-visibility-classes;
+@include foundation-responsive-embed;
+
+// We are using Zurb Foundation framework grid system, 
+// details and documentation can be found here - foundation.zurb.com/sites/docs/
+
+/* Setting Up The Breakpoints */
+
+// Breakpoint can be customized or removed, detailed documentation - foundation.zurb.com/sites/docs/media-queries.html#changing-the-breakpoints
+
+$breakpoints: (
+  small: 360px,                // Mobile
+  medium: 640px,               // Tablet, Mobile Lanscape
+  large: 1024px,               // Desktop  
+);
+
+// xlarge and xxlarge are not used by default, we have to specify used classes
+// $breakpoint-classes: (small medium large); - default
+$breakpoint-classes: (small medium large xlarge);
+
+/**
+* We are using SASS Breakpoint mixins provided by the framework, 
+* Documentation for SASS Breakpoint mixins - foundation.zurb.com/sites/docs/media-queries.html#sass
+*
+*	.element {
+*	  // Only affects medium screens and smaller
+*	  @include breakpoint(medium down) { }
+*	  // Only affects medium screens, not small or large
+*	  @include breakpoint(medium only) { }
+*	}
+*/
+
+
+/* Importing Partials and Modules */
+
+@import 'base';
+@import 'layout';
+@import 'util';
+@import 'modules/ad-block';
+@import 'modules/bio-img';
+@import 'modules/bubble';
+@import 'modules/lightbox-custom';
+@import 'modules/logo';
+@import 'modules/navigation';
+@import 'theme/page';
