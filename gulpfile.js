@@ -3,12 +3,11 @@ var gulp        = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass        = require('gulp-sass');
 var imagemin    = require('gulp-imagemin');
-var cp          = require('child_process');
-var concat      = require('gulp-concat');
-var uglify      = require('gulp-uglify');
+var shell       = require('gulp-shell');
+var clean       = require('gulp-clean');
 
 // Static Server + watching scss/html files
-gulp.task('serve', ['build-jekyll', 'sass', 'images', 'js', 'fonts', 'vendor'], function() {
+gulp.task('serve', ['build-jekyll', 'sass', 'images', 'fonts', 'vendor'], function() {
 
     browserSync.init({
         server: "./docs"
@@ -17,9 +16,11 @@ gulp.task('serve', ['build-jekyll', 'sass', 'images', 'js', 'fonts', 'vendor'], 
     gulp.watch("src/scss/**/*.scss", ['sass']).on('change', browserSync.reload);
     gulp.watch("src/images/**/*.*", ['images']).on('change', browserSync.reload);
     gulp.watch("src/images/**/*.*", ['fonts']).on('change', browserSync.reload);
-    gulp.watch("src/vendor/**/*.*", ['js']).on('change', browserSync.reload);
     gulp.watch("src/jekyll/**/*.html", ['build-jekyll']).on('change', browserSync.reload);
 });
+
+// Static Server + watching scss/html files
+gulp.task('build-prod', ['build-jekyll-dev', 'sass', 'images', 'fonts', 'vendor'], function() {});
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
@@ -52,19 +53,19 @@ gulp.task('vendor', () =>
         .pipe(browserSync.stream())
 );
 
-// Scripts
-gulp.task('js', function() {
-  return gulp.src(['src/vendor/js/lightbox-plus-jquery.min.js'])
-    .pipe(concat('main.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest('docs/js'));
-})
-
-// Rebuild Jekyll
-gulp.task('build-jekyll', (code) => {
-  return cp.spawn('C:\\Ruby23-x64\\bin\\jekyll.bat', ['build', '--incremental' ], {stdio: 'inherit'}) // Adding incremental reduces build time.
-    .on('error', (error) => gutil.log(gutil.colors.red(error.message)))
-    .on('close', code);
+// Clean docs folder 
+gulp.task('clean', function () {
+    return gulp.src('./docs', {read: false})
+        .pipe(clean());
 });
 
+// Build Jekyll Dev
+gulp.task('build-jekyll', shell.task(['bundle exec jekyll build --baseurl ""']));
+
+// Build Jekyll Prod
+gulp.task('build-jekyll-dev', shell.task(['bundle exec jekyll build --baseurl "/friends"']));
+
+// Project Build Options
 gulp.task('default', ['serve']);
+gulp.task('dev', ['serve']);
+gulp.task('prod', ['build-prod']);
