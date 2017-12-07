@@ -8,6 +8,7 @@
 @include foundation-flex-classes;
 @include foundation-visibility-classes;
 @include foundation-responsive-embed;
+@include foundation-float-classes;
 
 // We are using Zurb Foundation framework grid system, 
 // details and documentation can be found here - foundation.zurb.com/sites/docs/
@@ -17,14 +18,14 @@
 // Breakpoint can be customized or removed, detailed documentation - foundation.zurb.com/sites/docs/media-queries.html#changing-the-breakpoints
 
 $breakpoints: (
-  small: 360px,                // Mobile
+  small: 320px,                // Mobile
   medium: 640px,               // Tablet, Mobile Lanscape
   large: 1024px,               // Desktop  
 );
 
 // xlarge and xxlarge are not used by default, we have to specify used classes
 // $breakpoint-classes: (small medium large); - default
-$breakpoint-classes: (small medium large xlarge);
+$breakpoint-classes: (small medium large);
 
 /**
 * We are using SASS Breakpoint mixins provided by the framework, 
@@ -45,6 +46,7 @@ $breakpoint-classes: (small medium large xlarge);
 @import 'layout';
 @import 'util';
 @import 'modules/ad-block';
+@import 'modules/awards-section';
 @import 'modules/bio-img';
 @import 'modules/bubble';
 @import 'modules/lightbox-custom';

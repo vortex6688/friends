@@ -720,6 +720,26 @@
   .flex-video.widescreen {
     padding-bottom: 56.25%; }
 
+.float-left {
+  float: left !important; }
+
+.float-right {
+  float: right !important; }
+
+.float-center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto; }
+
+.clearfix::before, .clearfix::after {
+  display: table;
+  content: ' ';
+  flex-basis: 0;
+  order: 1; }
+
+.clearfix::after {
+  clear: both; }
+
 /* Setting Up The Breakpoints */
 /**
 * We are using SASS Breakpoint mixins provided by the framework, 
@@ -744,7 +764,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  min-width: 360px;
+  min-width: 300px;
   font-size: 1.8rem;
   color: #111;
   background-color: rgba(255, 255, 255, 0.9);
@@ -811,8 +831,8 @@ section {
   box-sizing: border-box; }
   @media screen and (max-width: 39.9375em) {
     section {
-      padding-left: 1em;
-      padding-right: 1em; } }
+      padding-left: 0.75em;
+      padding-right: 0.75em; } }
 
 /* Layout Style Rules */
 .l-centered {
@@ -863,6 +883,13 @@ section {
 .ad {
   border: 1px #000 solid; }
 
+.awards-header {
+  background: url({{site.baseurl}}/images/awards-title.png) no-repeat center;
+  background-size: contain; }
+  @media screen and (max-width: 39.9375em) {
+    .awards-header {
+      background: none; } }
+
 /* Biography Img Fixed */
 .bio-img {
   width: 100%;
@@ -896,7 +923,11 @@ nav {
   border-radius: 0 0 1em 1em; }
   @media screen and (max-width: 39.9375em) {
     nav {
-      border-radius: 0; } }
+      border-radius: 0;
+      transition: all ease 0.5s; }
+      nav.collapsed {
+        margin-top: -10.75em;
+        transition: all ease 0.5s; } }
   nav a {
     padding: 0.4em 0;
     color: #000;
@@ -910,6 +941,15 @@ nav {
         text-align: center;
         white-space: nowrap;
         padding: 0.2em 0; } }
+
+.mobile-nav-trigger {
+  margin-top: 0.5rem;
+  width: 5.4rem;
+  height: 5.4rem;
+  transition: all ease 0.5s; }
+  .mobile-nav-trigger.close {
+    transform: rotate(180deg);
+    transition: all ease 0.5s; }
 
 /* Page Style Rules */
 .page {

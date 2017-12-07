@@ -4,7 +4,6 @@ var browserSync = require('browser-sync').create();
 var sass        = require('gulp-sass');
 var imagemin    = require('gulp-imagemin');
 var shell       = require('gulp-shell');
-var clean       = require('gulp-clean');
 
 // Static Server + watching scss/html files
 gulp.task('serve', ['build-jekyll', 'sass', 'images', 'fonts', 'vendor'], function() {
@@ -52,12 +51,6 @@ gulp.task('vendor', () =>
         .pipe(gulp.dest('docs/vendor'))
         .pipe(browserSync.stream())
 );
-
-// Clean docs folder 
-gulp.task('clean', function () {
-    return gulp.src('./docs', {read: false})
-        .pipe(clean());
-});
 
 // Build Jekyll Dev
 gulp.task('build-jekyll', shell.task(['bundle exec jekyll build --baseurl ""']));

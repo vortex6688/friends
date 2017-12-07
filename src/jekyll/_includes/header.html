@@ -1,9 +1,9 @@
 <header>
-  <section class="l-no-pad row align-center l-no-line-height">
-	<h1 class="title hide">{{ site.title }}</h1>
-	<a href="/"><img class="logo" alt="{{ site.title }}" src="{{site.baseurl}}/images/header-background.jpg" alt="friends logo" /></a>
+  <section style="position: relative;" class="l-no-pad row align-center l-no-line-height">
+    <h1 class="title hide">{{ site.title }}</h1>
+    <a href="/"><img class="logo" alt="{{ site.title }}" src="{{site.baseurl}}/images/header-background.jpg" alt="friends logo" /></a>
   </section>
-  <nav class="row align-spaced">
+  <nav class="align-spaced align-middle flex-container flex-dir-column medium-flex-dir-row collapsed">
     <a href="{{ site.baseurl}}/">Home</a>
     <a href="{{ site.baseurl}}/characters">Characters</a>
     <a href="{{ site.baseurl}}/watch">Watch Friends Online</a>
@@ -11,4 +11,5 @@
     <a href="{{ site.baseurl}}/contact">Contact</a>
     <a href="{{ site.baseurl}}/links">Links</a>
   </nav>
+  <div onclick="toggleNav()" class="row show-for-small-only"><img class="mobile-nav-trigger float-center" src="{{site.baseurl}}/images/mobile-menu-open.png" /></div>
 </header>

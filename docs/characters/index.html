@@ -17,11 +17,11 @@
 <body class="characters l-fixed">
 
 	<header>
-  <section class="l-no-pad row align-center l-no-line-height">
-	<h1 class="title hide">Fans Of Friends</h1>
-	<a href="/"><img class="logo" alt="Fans Of Friends" src="/friends/images/header-background.jpg" alt="friends logo" /></a>
+  <section style="position: relative;" class="l-no-pad row align-center l-no-line-height">
+    <h1 class="title hide">Fans Of Friends</h1>
+    <a href="/"><img class="logo" alt="Fans Of Friends" src="/friends/images/header-background.jpg" alt="friends logo" /></a>
   </section>
-  <nav class="row align-spaced">
+  <nav class="align-spaced align-middle flex-container flex-dir-column medium-flex-dir-row collapsed">
     <a href="/friends/">Home</a>
     <a href="/friends/characters">Characters</a>
     <a href="/friends/watch">Watch Friends Online</a>
@@ -29,6 +29,7 @@
     <a href="/friends/contact">Contact</a>
     <a href="/friends/links">Links</a>
   </nav>
+  <div onclick="toggleNav()" class="row show-for-small-only"><img class="mobile-nav-trigger float-center" src="/friends/images/mobile-menu-open.png" /></div>
 </header>
 
 	<div class="page">
@@ -94,6 +95,12 @@
 		</div>
 	</section>
 	
+	<script>
+		function toggleNav() {
+			document.querySelector("nav").classList.toggle('collapsed');
+			document.querySelector(".mobile-nav-trigger").classList.toggle('close');
+		}
+	</script>
 
 </footer>
 
